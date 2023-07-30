@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Yuki Kurenai</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="test-control">
+  <div class="audio">
+    <audio controls src="music/chill-backsound.mp3" class="music"></audio>
+    <span>
+      <img src="icons/audio/icons8-play-button-circled-64.png" class="play" alt="">
+    </span>
+    <span>
+      <img src="icons/audio/icons8-volume-64.png" class="unmute" alt="">
+    </span>
+  </div>
+  <div class="language">
+    <a href="?lang=id_ID" id="id_ID"></a>
+    <a href="?lang=en_EN" id="en_EN"></a>
+  </div>
+</div>
+
+<!-- partial:index.partial.html -->
+<div class="catalog-app">
+  <div id="viewer">
+    <div id="flipbook" class="ui-flipbook">
+      <!-- Do not place the content here -->
+      <a ignore="1" class="ui-arrow-control ui-arrow-next-page"></a>
+      <a ignore="1" class="ui-arrow-control ui-arrow-previous-page"></a>
+    </div>
+  </div>
+  
+  <!-- controls -->
+  <div id="controls">
+    <div class="all">
+        <div class="ui-slider" id="page-slider">
+        <div class="bar">
+          <div class="progress-width">
+            <div class="progress">
+              <div class="handler"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-options" id="options">
+        <a class="ui-icon" id="ui-icon-table-contents"></a>
+        <a class="ui-icon show-hint" title="Miniatures" id="ui-icon-miniature"></a>
+        <a class="ui-icon" id="ui-icon-zoom"></a>
+        <a class="ui-icon show-hint" title="Contact" id="ui-icon-contact"></a>
+        <a class="ui-icon show-hint" title="Full Screen" id="ui-icon-full-screen"></a>
+        <a class="ui-icon show-hint" id="ui-icon-toggle"></a>
+      </div>
+
+      <!-- zoom slider -->
+      <div id="zoom-slider-view" class="zoom-slider">
+          <div class="bg">
+             <div class="ui-slider" id="zoom-slider">
+              <div class="bar">
+                <div class="progress-width">
+                  <div class="progress">
+                    <div class="handler"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / zoom slider -->
+    </div>
+    
+    <div id="ui-icon-expand-options">
+      <a class="ui-icon show-hint">
+        <i class="fa fa-ellipsis-h"></i>
+      </a>
+    </div>
+
+  </div>
+  <!-- / controls -->
+
+  <!-- miniatures -->
+  <div id="miniatures" class="ui-miniatures-slider">
+
+  </div>
+  <!-- / miniatures -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
+  <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
